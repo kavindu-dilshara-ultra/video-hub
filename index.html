@@ -233,6 +233,10 @@
             background: linear-gradient(45deg, #0080ff, #4099ff);
         }
 
+        .dl-btn {
+           background: linear-gradient(45deg, #0080ff, #4099ff);
+        }
+
         .current-video-title {
             text-align: center;
             color: #ff0040;
@@ -336,6 +340,7 @@
                 <div class="video-controls">
                     <button class="btn back-btn" onclick="goHome()">← Back to Home</button>
                     <button class="btn share-btn" onclick="shareVideo()">📤 Share</button>
+                    <button class="btn dl-btn" onclick="download()">Download </button>
                 </div>
 <script async="async" data-cfasync="false" src="//pl26803640.profitableratecpm.com/90a47aba31742728f5ba57f37d46bdf0/invoke.js"></script>
 <div id="container-90a47aba31742728f5ba57f37d46bdf0"></div>
@@ -483,6 +488,9 @@
             
             currentVideoKey = null;
         }
+        
+        function download() {
+            window.open('https://www.profitableratecpm.com/n5gkr73xe?key=aa0860b35abce6139deb727ad448b7ae', '_blank');
 
         function shareVideo() {
             if (currentVideoKey && videoData[currentVideoKey]) {
