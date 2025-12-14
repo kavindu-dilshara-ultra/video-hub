@@ -1,0 +1,42 @@
+<!-- videoplayback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL STREAM - Video Playback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SOCIAL STREAM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="video-playback" class="video-playback">
+            <img id="thumbnail" src="" alt="Thumbnail">
+            <h2 id="title"></h2>
+            <button id="play-button" class="play-button"><i class="fas fa-play"></i> Play</button>
+            <div id="countdown" class="countdown hidden"></div>
+            <a id="watch-full" class="watch-full hidden" href="#">Watch Full Video</a>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 SOCIAL STREAM
+    </footer>
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+    <script>
+        loadPlayback();
+    </script>
+</body>
+</html>
