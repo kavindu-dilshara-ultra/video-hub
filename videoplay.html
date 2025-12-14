@@ -1,0 +1,60 @@
+<!-- videoplay.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCIAL STREAM - Watch Video</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SOCIAL STREAM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-player-container">
+            <video id="video-player" controls>
+                <source id="video-source" src="" type="video/mp4">
+            </video>
+            <h2 id="title"></h2>
+            <p id="description"></p>
+            <p id="date"></p>
+            <div class="video-stats">
+                <span id="view-count">0 views</span>
+                <button id="like-button"><i class="fas fa-thumbs-up"></i> Like</button>
+            </div>
+            <button id="share-button"><i class="fas fa-share"></i> Share</button>
+        </div>
+
+        <!-- Ad Below Video -->
+        <div class="ad-below">Ad Placeholder Below Video</div>
+
+        <!-- Suggested Videos -->
+        <h3>Suggested Videos</h3>
+        <div id="suggested-grid" class="video-grid"></div>
+
+        <!-- Sidebar Ad -->
+        <div class="ad-sidebar">Sidebar Ad Placeholder</div>
+    </main>
+
+    <footer>
+        © 2025 SOCIAL STREAM
+    </footer>
+
+    <button id="scroll-to-top" class="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+    <script>
+        loadVideo();
+    </script>
+</body>
+</html>
